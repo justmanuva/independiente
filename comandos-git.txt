@@ -1,0 +1,12 @@
+- git init -> Inicializa git.
+- git add <nombre-archivo> || <.> -> Añade los archivos a la Stage area.
+- git commit -m "Comentario obligatorio" -> Confirma los cambios en los archivos de la Stage
+- git branch -M main -> Crea la rama main en mi git.
+- git remote add origin <url> -> Añade un repositorio remoto a tu origen.
+- git config --global user.name "nombre" -> Configura tu username.
+- git config --global user.email <email> -> Configura tu email.
+- git status -> Indica el estado de los archivos de la Working y Stage Area.
+- git log || git log --oneline -> Indica estado de los commits realizados.
+- git clone <url> -> Clona el repositorio remoto en local.
+- git push -u origin main -> Sube archivos al repositorio origin de tu rama main.
+- git pull -> Descarga los archivos del repositorio remoto
