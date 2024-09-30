@@ -9,4 +9,5 @@
 - git log || git log --oneline -> Indica estado de los commits realizados.
 - git clone <url> -> Clona el repositorio remoto en local.
 - git push -u origin main -> Sube archivos al repositorio origin de tu rama main.
-- git pull -> Descarga los archivos del repositorio remoto
+- git pull -> Descarga los archivos del repositorio remoto.
+- git fetch -> Actualiza los metadatos del repositorio remoto.
