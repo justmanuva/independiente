@@ -7,3 +7,4 @@
 - sudo dpkg --list: Listar todos los Paquetes
 - sudo dpkg --list | grep (nombre): Listar por nombre
 - sudo apt-get --purge remove (nombrePaquete): Borrar paquete
+- ln -s (rutaOrigenArchivo) (rutaAccesoArchivo): Crea acceso directo
