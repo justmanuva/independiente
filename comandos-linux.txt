@@ -2,6 +2,7 @@
 - touch (+nombre): Crear archivos
 - nano (+nombre): Crear archivos (más detallado)
 - mv (+nombre): Renombrar archivo (o carpeta?)
+	- (+ruta/nombre) (ruta): Mueve el archivo a la ruta de la derecha
 - rm(dir)(+nombre): Borrar archivo(carpeta)
 	- (-r para por si tiene archivos dentro)
 - sudo dpkg --list: Listar todos los Paquetes
