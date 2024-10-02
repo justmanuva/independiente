@@ -5,6 +5,7 @@
 	- (+ruta/nombre) (ruta): Mueve el archivo a la ruta de la derecha
 - rm(dir)(+nombre): Borrar archivo(carpeta)
 	- (-r para por si tiene archivos dentro)
+	- (-f para forzar la eliminación)
 - sudo dpkg --list: Listar todos los Paquetes
 - sudo dpkg --list | grep (nombre): Listar por nombre
 - sudo apt-get --purge remove (nombrePaquete): Borrar paquete
