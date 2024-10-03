@@ -1,13 +1,27 @@
 - git init -> Inicializa git.
-- git add <nombre-archivo> || <.> -> Añade los archivos a la Stage area.
-- git commit -m "Comentario obligatorio" -> Confirma los cambios en los archivos de la Stage
-- git branch -M main -> Crea la rama main en mi git.
-- git remote add origin <url> -> Añade un repositorio remoto a tu origen.
-- git config --global user.name "nombre" -> Configura tu username.
-- git config --global user.email <email> -> Configura tu email.
-- git status -> Indica el estado de los archivos de la Working y Stage Area.
-- git log || git log --oneline -> Indica estado de los commits realizados.
-- git clone <url> -> Clona el repositorio remoto en local.
-- git push -u origin main -> Sube archivos al repositorio origin de tu rama main.
-- git pull -> Descarga los archivos del repositorio remoto.
-- git fetch -> Actualiza los metadatos del repositorio remoto.
+- " add <nombre-archivo> || <.> -> Añade los archivos a la Stage area.
+- " commit -m "Comentario obligatorio" -> Confirma los cambios en los archivos de la Staged area.
+	+ --amend -m <"nuevo-nombre"> -> Cambia el nombre al commit.
+- " branch -M main -> Crea la rama main en mi git.
+- " remote add origin <url> -> Añade un repositorio remoto a tu origen.
+- " config --global user.name "nombre" -> Configura tu username.
+- " " "  user.email <email> -> Configura tu email.
+- " " " alias.<abreviatura> <comando a abreviar> -> Crea un alias para llamar a un comando.
+- " status -> Indica el estado de los archivos de la Working y Stage Area.
+- " log -> Indica estado de los commits realizados.
+	+ --oneline -> Lo hace en una linea.
+	+ --raw -> Te dice los archivos confirmados en cada commit.
+	+ --stat -> Muestra el numero de inserciones y eliminaciones de cada archivo modificado.
+	+ -p -> Muestra todos los cambios reales del parche.
+- " clone <url> -> Clona el repositorio remoto en local.
+- " push -u origin main -> Sube archivos al repositorio origin de tu rama main.
+- " pull -> Descarga los archivos del repositorio remoto.
+- " fetch -> Actualiza los metadatos del repositorio remoto.
+- " checkout <id del commit ||  master> -> Cambiamos la HEAD  al commit que queramos.
+- " restore --staged <nombre-archivo> -> Restaura un archivo de la staged area.
+- " reset <id-commit> -> Pone el master en el commit indicado.
+	+ --soft -> Se guardan los cambios en la staged area.
+	+ --mixed (nada) -> " " " " " " working area.
+	+ --hard -> No se guarda nada, reseteo completo.
+- " tag <nombre> -> Añade un tag al commit.
+	+ -d <nombre> -> Borra el tag con el nombre indicado.
