@@ -2,7 +2,7 @@
 - " add <nombre-archivo> || <.> -> Añade los archivos a la Stage area.
 - " commit -m "Comentario obligatorio" -> Confirma los cambios en los archivos de la Staged area.
 	+ --amend -m <"nuevo-nombre"> -> Cambia el nombre al commit.
-- " branch -M main -> Crea la rama main en mi git.
+- " branch -M main || <nombre> -> Crea una rama (-M para la main).
 - " remote add origin <url> -> Añade un repositorio remoto a tu origen.
 - " config --global user.name "nombre" -> Configura tu username.
 - " " "  user.email <email> -> Configura tu email.
@@ -13,6 +13,8 @@
 	+ --raw -> Te dice los archivos confirmados en cada commit.
 	+ --stat -> Muestra el numero de inserciones y eliminaciones de cada archivo modificado.
 	+ -p -> Muestra todos los cambios reales del parche.
+	+ --graph -> Muestra graficamente los nodos y ramas.
+	+ --pretty -> Más graficamente.
 - " clone <url> -> Clona el repositorio remoto en local.
 - " push -u origin main -> Sube archivos al repositorio origin de tu rama main.
 - " pull -> Descarga los archivos del repositorio remoto.
@@ -25,3 +27,4 @@
 	+ --hard -> No se guarda nada, reseteo completo.
 - " tag <nombre> -> Añade un tag al commit.
 	+ -d <nombre> -> Borra el tag con el nombre indicado.
+- " switch -> Cambiar de rama.
