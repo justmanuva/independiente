@@ -39,7 +39,35 @@ cadena.trim();
 cadena.trimStart();
 cadena.trimEnd();
 
-document.write(resultado);
-
 
 //Arrays y sus métodos.
+
+let numeros = ["pedro", "maría", "jorge"];
+
+//Elimina último cajon y lo muestra
+let resultado = numeros.pop();
+//Elimina primer cajón y lo muestra
+resultado = numeros.shift();
+//Añade juancito al array
+resultado = numeros.push("juancito");
+//Ordena el array al revés
+resultado = numeros.reverse();
+//Agrega al principo
+numeros.unshift(0,1,2);
+//Ordena el array alfabéticamente
+numeros.sort();
+//A partir de la posicion 1, borra 3 elementos y añade "roberto"
+numeros.splice(1,3,"roberto");
+//Pasa el array a cadena de texto, con param nos separa cada elemto con lo ingresado
+resultado = numeros.join("<br>elemento: ");
+// document.write("elemento: "+resultado)
+//Devuelve el array de la posicion 0 a la 2 sin contar el 2
+// resultado = numeros.slice(0,2);
+
+
+let numeros2 = ["abecedario", "manzana", "pedro", "dedo", "bobo", "pedro"];
+
+//Utiliza la función flecha como bucle para que en cada vuelta se haga lo indicado
+resultado = numeros2.filter(numero => numero.length > 5);
+document.write(resultado);
+
