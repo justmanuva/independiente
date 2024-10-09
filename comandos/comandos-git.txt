@@ -3,6 +3,7 @@
 - " commit -m "Comentario obligatorio" -> Confirma los cambios en los archivos de la Staged area.
 	+ --amend -m <"nuevo-nombre"> -> Cambia el nombre al commit.
 - " branch -M main || <nombre> -> Crea una rama (-M para la main).
+	+ -d || -D -> Borra la rama (-D para forzar su eliminación).
 - " remote add origin <url> -> Añade un repositorio remoto a tu origen.
 - " config --global user.name "nombre" -> Configura tu username.
 - " " "  user.email <email> -> Configura tu email.
@@ -20,6 +21,7 @@
 - " pull -> Descarga los archivos del repositorio remoto.
 - " fetch -> Actualiza los metadatos del repositorio remoto.
 - " checkout <id del commit ||  master> -> Cambiamos la HEAD  al commit que queramos.
+	+ checkout <id commit> -- <ruta_archivo> -> Restaura la version de un archivo específico de un commit distinto.
 - " restore --staged <nombre-archivo> -> Restaura un archivo de la staged area.
 - " reset <id-commit> -> Pone el master en el commit indicado.
 	+ --soft -> Se guardan los cambios en la staged area.
@@ -28,3 +30,5 @@
 - " tag <nombre> -> Añade un tag al commit.
 	+ -d <nombre> -> Borra el tag con el nombre indicado.
 - " switch -> Cambiar de rama.
+- " show -s --format="%an" -> Muestra el nombre del autor del último commit.
+- " rm -> Borra un archivo del proyecto git.
