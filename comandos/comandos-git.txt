@@ -4,7 +4,10 @@
 	+ --amend -m <"nuevo-nombre"> -> Cambia el nombre al commit.
 - " branch -M main || <nombre> -> Crea una rama (-M para la main).
 	+ -d || -D -> Borra la rama (-D para forzar su eliminación).
-- " remote add origin <url> -> Añade un repositorio remoto a tu origen.
+- " remote -> Miras los remotos que tienes asociados.
+	+ -v -> Te sale más información sobre los remotos asociados.
+	+ add origin <url> -> Añade un repositorio remoto a tu origen.
+	+ rm <nombre> -> Desasocia el repositorio remoto.
 - " config --global user.name "nombre" -> Configura tu username.
 - " " "  user.email <email> -> Configura tu email.
 - " " " alias.<abreviatura> <comando a abreviar> -> Crea un alias para llamar a un comando.
@@ -19,7 +22,7 @@
 - " clone <url> -> Clona el repositorio remoto en local.
 - " push -u origin main -> Sube archivos al repositorio origin de tu rama main.
 - " pull -> Descarga los archivos del repositorio remoto.
-- " fetch -> Actualiza los metadatos del repositorio remoto.
+- " fetch -> Comprueba que haya cambios en el repositorio remoto.
 - " checkout <id del commit ||  master> -> Cambiamos la HEAD  al commit que queramos.
 	+ checkout <id commit> -- <ruta_archivo> -> Restaura la version de un archivo específico de un commit distinto.
 - " restore --staged <nombre-archivo> -> Restaura un archivo de la staged area.
