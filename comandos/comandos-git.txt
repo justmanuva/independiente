@@ -30,5 +30,11 @@
 - " tag <nombre> -> Añade un tag al commit.
 	+ -d <nombre> -> Borra el tag con el nombre indicado.
 - " switch -> Cambiar de rama.
-- " show -s --format="%an" -> Muestra el nombre del autor del último commit.
+- " show -> Muestra los cambios en los commit.
+	+-s --format="%an" -> Muestra el nombre del autor del último commit.
 - " rm -> Borra un archivo del proyecto git.
+- " blame <nombre_archivo> -> Muestra quien ha tocado el archivo.
+- " stash -> Guarda los archivos de la working area en una zona protegida.
+	+ " " list -> Lista los archivos stasheados.
+	+ " " pop -> Rescata los archivos stasheados.
+	+ " " drop -> Borro lo que tengo en el stash.
