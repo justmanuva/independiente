@@ -39,14 +39,35 @@
 
 //Atributos comunes de HTML
 
+// const titulo = document.querySelector(".titulo");
+// //contentEditable para cambiar el contenido.
+// titulo.setAttribute("contentEditable","true");
+// //Cambiar la dirección de la escritura (LeftToRight (lft), RightToLeft (rtl))
+// titulo.setAttribute("dir","ltr");
+// //Ocultar/desocultar elemento
+// // titulo.setAttribute("hidden","false");
+// //Para poder hacer focus a un elemento
+// titulo.setAttribute("tabindex","0");
+// //Cambia el title (nombre que sale al pasar el raton por encima de un elemento)
+// titulo.setAttribute("title","jajajaja xd");
+
+//Seleccionar nombre de clase por atributos
+
+const input = document.querySelector(".input-normal");
+// document.write(input.className)
+// //Seleccionar valor del nodo
+// document.write(input.value);
+// //Cambiar tipo por atributo
+// input.type = "color";
+//Solo vale el archivo indicado para el input "file"
+// input.accept = "image/png";
+//Cambiar el minlength
+input.minLength = 4;
+//Modifica el placeholder
+input.placeholder = "a que no me podes escribir";
+//Modifica required
+input.required = " ";
+
 const titulo = document.querySelector(".titulo");
-//contentEditable para cambiar el contenido.
-titulo.setAttribute("contentEditable","true");
-//Cambiar la dirección de la escritura (LeftToRight (lft), RightToLeft (rtl))
-titulo.setAttribute("dir","ltr");
-//Ocultar/desocultar elemento
-// titulo.setAttribute("hidden","false");
-//Para poder hacer focus a un elemento
-titulo.setAttribute("tabindex","0");
-//Cambia el title (nombre que sale al pasar el raton por encima de un elemento)
-titulo.setAttribute("title","jajajaja xd");
+
+titulo.style.color = "red"
