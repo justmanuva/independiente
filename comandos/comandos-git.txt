@@ -2,8 +2,9 @@
 - " add <nombre-archivo> || <.> -> Añade los archivos a la Stage area.
 - " commit -m "Comentario obligatorio" -> Confirma los cambios en los archivos de la Staged area.
 	+ --amend -m <"nuevo-nombre"> -> Cambia el nombre al commit.
-- " branch -M main || <nombre> -> Crea una rama (-M para la main).
+- " branch <nombre> -> Crea una rama.
 	+ -d || -D -> Borra la rama (-D para forzar su eliminación).
+	+ -m || -M -> Cambiar nombre de rama
 - " remote -> Miras los remotos que tienes asociados.
 	+ -v -> Te sale más información sobre los remotos asociados.
 	+ add origin <url> -> Añade un repositorio remoto a tu origen.
