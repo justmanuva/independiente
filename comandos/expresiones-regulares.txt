@@ -1,0 +1,8 @@
+*Coge valores de la tabla ASCII*
+
+- [0-9] -> Corchetes para que te coja entre esos valores.
+	- [a-zA-z] -> Para coger diferentes valores x a x.
+- {1,2} -> Llaves para que te saque de x a x elementos.
+- + -> 1 o más.
+- * -> 0 o más.
+- | -> Para poner varias expresiones juntas.
