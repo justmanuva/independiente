@@ -53,7 +53,7 @@
 
 //Seleccionar nombre de clase por atributos
 
-const input = document.querySelector(".input-normal");
+// const input = document.querySelector(".input-normal");
 // document.write(input.className)
 // //Seleccionar valor del nodo
 // document.write(input.value);
@@ -62,12 +62,63 @@ const input = document.querySelector(".input-normal");
 //Solo vale el archivo indicado para el input "file"
 // input.accept = "image/png";
 //Cambiar el minlength
-input.minLength = 4;
+// input.minLength = 4;
 //Modifica el placeholder
-input.placeholder = "a que no me podes escribir";
+// input.placeholder = "a que no me podes escribir";
 //Modifica required
-input.required = " ";
+// input.required = " ";
 
-const titulo = document.querySelector(".titulo");
+// const titulo = document.querySelector(".titulo");
 
-titulo.style.color = "red"
+//Editar propiedades CSS
+// titulo.style.padding = "30px";
+// titulo.style.backgroundColor = "#48e";
+
+//Agrega/borra una clase
+// titulo.classList.add("grande");
+// titulo.classList.remove("grande");
+
+// //Muestra la primera clase de nuestro elemento
+// titulo.classList.item(0);
+
+// //Boolean si la contiene
+// titulo.classList.contains("grande");
+
+// //Si la tiene LA QUITA, si no LA AÑADE
+// titulo.classList.toggle("grande");
+// //La agrega pase lo que pase
+// titulo.classList.toggle("grande", true);
+
+// //Reeplaza "grande" por "chico"
+// titulo.classList.replace("grande", "chico");
+
+//Nos devuelve el texto html (pero NO las etiquetas de formato del texto)
+// titulo.textContent;
+// // Solo lo devuelve si es VISIBLE
+// titulo.innerText;
+// // Lo muestra con el formato
+// titulo.innerHTML;
+// // Muestra los datos de toda la etiqueta
+// titulo.outerHTML;
+
+const contenedor = document.querySelector(".contenedor");
+
+//Crea item, en MAYUSCULA con createElement
+// const item = document.createElement("LI");
+
+//Crea un nodo objeto
+// const textDelItem = document.createTextNode("Este es un item de la lista");
+
+//Introducir un elemento dentro de otro
+// item.appendChild(textDelItem);
+
+const fragmento = document.createDocumentFragment();
+
+//Manera muy optimizada de añadir recursos en bucle (utilizando FRAGMENT)
+for (let i = 0; i < 20; i++) {
+	const item = document.createElement("LI");
+	item.innerHTML = "Este es un item de la lista";
+	fragmento.appendChild(item);
+}
+
+contenedor.appendChild(fragmento);
