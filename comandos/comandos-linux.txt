@@ -1,6 +1,7 @@
 - pwd: Ver ruta en la que estoy
 - touch (+nombre): Crear archivos
 - nano (+nombre): Crear archivos (más detallado)
+	-(-l para numeros de línea)
 - mv (+nombre): Renombrar archivo (o carpeta?)
 	- (+ruta/nombre) (ruta): Mueve el archivo a la ruta de la derecha
 - rm(dir)(+nombre): Borrar archivo(carpeta)
