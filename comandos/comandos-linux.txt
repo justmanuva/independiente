@@ -7,7 +7,15 @@
 - rm(dir)(+nombre): Borrar archivo(carpeta)
 	- (-r para por si tiene archivos dentro)
 	- (-f para forzar la eliminación)
+- cp (dir) (nuevoNombre): Copia archivos
 - sudo dpkg --list: Listar todos los Paquetes
 - sudo dpkg --list | grep (nombre): Listar por nombre
 - sudo apt-get --purge remove (nombrePaquete): Borrar paquete
 - ln -s (rutaOrigenArchivo) (rutaAccesoArchivo): Crea acceso directo
+- chgrp -R (grupo) (directorios): Cambia de grupo a los dir
+- chown -R (user) (directorios): Cambia de propietario a los dir
+- chmod 775 (directorios): Asigna derechos de escritura
+- service (servicio) restart: Reiniciar servicio
+- a2ensite (sitio): Activa el sitio
+- a2dissite (sitio): Desactiva el sitio
+- apache2ctl -t: Te avisa de posibles errores
