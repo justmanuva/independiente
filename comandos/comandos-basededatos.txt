@@ -1,0 +1,2 @@
+- sudo chown -R estudiante var/www: Para poder lidiar con imagenes
+- sudo chmod 777 -R var/www: Para poder lidiar con imagenes

@@ -1,0 +1,1 @@
+- sudo apt-get install php-mysqlnd: Instalar bases de datos para php
