@@ -19,3 +19,5 @@
 - a2ensite (sitio): Activa el sitio
 - a2dissite (sitio): Desactiva el sitio
 - apache2ctl -t: Te avisa de posibles errores
+- zip -r ejemplo.zip carpetaEjemplo: Comprime la carpeta de ejemplo en ejemplo.zip
+- unzip ejemplo.zip: Descomprime la carpeta de ejemplo.zip
