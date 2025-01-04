@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="customerService" class="com.example.primary.CustomerAServiceImpl">
+    </bean>
+</beans>
+
+<!--
+Configurarlo de esta forma con .xml ya es más antiguo, ahora se usa
+más Spring boot, la forma que hemos hecho de @Service, @Component etc...
+
+(Esta forma en .xml es la que hacemos en el curso que empecé sin querer)
+-->
