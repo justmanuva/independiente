@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!--Con init-method: init digo que el método que va a ejecutar este bean al incizarse es init-->
+	<bean id="personaDao" class="com.openwebinars.lifecycle.PersonaDAOImplMemory" init-method="init">
+	
+	</bean>
+
+
+</beans>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--<bean id="saludator" class="com.openwebinars.beans.Saludator">
+        Inyección vía setter
+        <property name="mensaje" value="Hola alumnos de openwebinars"></property>
+
+        Inyección vía constructor
+        <constructor-arg value="Hola alumnos de openwebinars"></constructor-arg>
+    </bean>-->
+
+    <!--Bean que referencia a "saludator"-->
+    <!--<bean id="emailService" class="com.openwebinars.beans.EmailService">
+        <property name="saludator" ref="saludator"></property>
+    </bean>-->
+
+    <!--En el caso de tener autowire="byType" seleccionamos un bean con primary="true" para que tenga preferencia-->
+    <!--<bean id="emailService" class="com.openwebinars.beans.EmailService" autowire="byType">
+
+    </bean>
+
+    <bean id="saludator" class="com.openwebinars.beans.Saludator" primary="true">
+        <property name="mensaje" value="Hola alumnos de openwebinars"></property>
+    </bean>
+
+    <bean id="englishSaludator" class="com.openwebinars.beans.Saludator">
+        <property name="mensaje" value="Hello World!!!"></property>
+    </bean>-->
+
+    <!--Singleton: Una sola instancia del bean y cada vez que se use referencia a este-->
+    <!--<bean id="emailService" class="com.openwebinars.beans.EmailService" scope="singleton">
+        <property name="saludator" ref="saludator"></property>
+    </bean>
+
+    <bean id="saludator" class="com.openwebinars.beans.Saludator">
+        <property name="mensaje" value="Hola alumnos de openwebinars"></property>
+    </bean>-->
+
+    <!--Prototype: -->
+    <bean id="emailService" class="com.openwebinars.beans.EmailService" scope="prototype">
+        <property name="saludator" ref="saludator"></property>
+    </bean>
+
+    <bean id="saludator" class="com.openwebinars.beans.Saludator">
+        <property name="mensaje" value="Hola alumnos de openwebinars"></property>
+    </bean>
+</beans>
