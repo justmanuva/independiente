@@ -1,0 +1,9 @@
+tsc ejemplo.ts -> Te crea el archivo JS.
+tsc --init -> Te crea el archivo tsconfig.json con las configuraciones de la build
+tsc demo.ts --w -> Te hace un watch (Actualiza automáticamente)
+
+Ctrl + Shift + B -> Elejir la run build.
+
+Terminal>Configure default terminal>build.
+
+
