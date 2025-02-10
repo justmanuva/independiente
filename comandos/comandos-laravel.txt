@@ -1,0 +1,32 @@
+DESCARGA:
+---------
+1. php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+2. php -r "if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'.PHP_EOL; } else { echo 'Installer corrupt'.PHP_EOL; unlink('composer-setup.php'); exit(1); }"
+3. php composer-setup.php
+4. php -r "unlink('composer-setup.php');"
+5. sudo mv composer.phar /usr/local/bin/composer
+
+- chmod 777 /08_laravel
+- composer create-project laravel/laravel ejemplo
+- php artisan serve (En la carpeta)
+
+Después vamos a la ruta que nos indica.
+
+Carpetas importante:
+- Controladores: App/Http/Controllers
+- Modelos: App/Models
+- Vistas: resources/views
+
+<ol>
+<?php foreach($videojuegos as $videojuego) ?>
+	<li><?php echo $videojuego ?></li>
+<?php } ?>
+</ol
+
+<ol>
+	@foreach($videojuegos as $videojuego)
+		<li>@{{$videojuego}}</li>
+	@endforeach
+</ol>
+
+- php artisan make:controller CocheController -> Creamos un controlador
