@@ -30,3 +30,4 @@ Carpetas importante:
 </ol>
 
 - php artisan make:controller CocheController -> Creamos un controlador
+- php artisan route:list -> Lista los archivos según los GET/POST
