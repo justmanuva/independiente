@@ -30,4 +30,7 @@ Carpetas importante:
 </ol>
 
 - php artisan make:controller CocheController -> Creamos un controlador
-- php artisan route:list -> Lista los archivos según los GET/POST
+- " " " " " --resource -> Te lo crea con métodos, CRUD etc.
+- php artisan route:list -> Lista los archivos según los GET/POST...
+- php artisan make:Model Marca -m -> Creamos un modelo y hacemos una migración (-m)
+- php artisan migrate -> Migra (Crea las tablas de la BD)
